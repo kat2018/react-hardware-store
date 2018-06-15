@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import AdminView from "./AdminView";
+
 
 class HomePage extends Component {
     constructor () {
@@ -6,7 +8,19 @@ class HomePage extends Component {
 
         this.state = {
             itemCurrentlyOnSale: 'A Hammer',
-            editSaleItem: true
+            editSaleItem: true, 
+            productList: [
+                {
+                    productName: 'Hammer',
+                    description: 'Itsa hammer',
+                    price: 12.3,
+                },
+                {
+                    productName: 'Nail',
+                    description: 'Itsa nail',
+                    price: 0.12,
+                }
+            ]
         }
     }
     
@@ -36,8 +50,8 @@ class HomePage extends Component {
                         {this.state.editSaleItem ? "Hide" : "Edit Sale Item"}
                         
                     </button>
-                    
-                    {this.state.itemCurrentlyOnSale 
+                     </div>
+                    {this.state.editSaleItem 
                     ? <div> 
                         <input 
                         type="text" 
@@ -47,7 +61,9 @@ class HomePage extends Component {
                     </div> 
                     : null}
 
-                </div>
+                {/* Product List is the name of the property */}
+                <AdminView productList={this.state.productList} />
+
             </div>
         )
         
