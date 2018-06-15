@@ -12,12 +12,12 @@ class HomePage extends Component {
             productList: [
                 {
                     productName: 'Hammer',
-                    description: 'Itsa hammer',
+                    description: 'Its a hammer',
                     price: 12.3,
                 },
                 {
                     productName: 'Nail',
-                    description: 'Itsa nail',
+                    description: 'Its a nail',
                     price: 0.12,
                 }
             ]
