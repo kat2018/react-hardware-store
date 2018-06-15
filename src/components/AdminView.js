@@ -16,12 +16,16 @@ class AdminView extends Component {
             <div>
                 <h1>Admin View</h1>
                 <h2>Products</h2>
-                <ProductList productList={this.props.productList} />
+                <ProductList 
+                productList={this.props.productList} 
+                deleteProduct={this.props.deleteProduct}
+                />
 
                 <h2>Create New Product</h2>
                 <ProductForm 
                 updateProductList={this.props.updateProductList}
                 />
+                
             </div>
         )
     }

@@ -7,7 +7,10 @@ class ProductList extends Component {
         console.log("Product List!!", this.props.productList)
 
         const productComponents = this.props.productList.map((product, i) => {
-            return <Product key={i} product={product} />
+            return <Product 
+            key={i} 
+            product={product}
+            deleteProduct={this.props.deleteProduct} />
         })
 
         return (

@@ -45,6 +45,13 @@ class HomePage extends Component {
         productList.push(newProduct)
         this.setState({ productList })
     }
+
+    deleteProduct = (index) => {
+        console.log("Deleted Product")
+        const productList = [...this.state.productList]
+        productList.splice(index, 1)
+        this.setState({ productList })
+    }
     
     render(){
         return (
@@ -71,7 +78,9 @@ class HomePage extends Component {
                 {/* Product List is the name of the property */}
                 <AdminView
                     productList={this.state.productList}
-                    updateProductList={this.updateProductList} />
+                    updateProductList={this.updateProductList}
+                    deleteProduct={this.deleteProduct}
+                    />
 
             </div>
         )
