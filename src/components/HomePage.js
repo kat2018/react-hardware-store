@@ -38,6 +38,13 @@ class HomePage extends Component {
     //here we are catching it and changing it in HTML by using the set state that is a function that takes a object
         this.setState({ itemCurrentlyOnSale: value})
     }
+
+    updateProductList = (newProduct) => {
+        console.log("CAUGHT IT FROM THE HOME PAGE")
+        const productList = [...this.state.productList]
+        productList.push(newProduct)
+        this.setState({ productList })
+    }
     
     render(){
         return (
@@ -62,7 +69,9 @@ class HomePage extends Component {
                     : null}
 
                 {/* Product List is the name of the property */}
-                <AdminView productList={this.state.productList} />
+                <AdminView
+                    productList={this.state.productList}
+                    updateProductList={this.updateProductList} />
 
             </div>
         )

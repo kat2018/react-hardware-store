@@ -19,7 +19,9 @@ class AdminView extends Component {
                 <ProductList productList={this.props.productList} />
 
                 <h2>Create New Product</h2>
-                <ProductForm />
+                <ProductForm 
+                updateProductList={this.props.updateProductList}
+                />
             </div>
         )
     }
