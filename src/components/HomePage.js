@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import AdminView from "./AdminView";
+import ShopView from './ShopView';
 
 
 class HomePage extends Component {
@@ -81,6 +82,12 @@ class HomePage extends Component {
                     updateProductList={this.updateProductList}
                     deleteProduct={this.deleteProduct}
                     />
+
+                <ShopView
+                    productList={this.state.productList}
+                    addToCart=
+                    {this.state.addToCart}
+                />
 
             </div>
         )
