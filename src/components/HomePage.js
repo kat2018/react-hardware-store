@@ -84,7 +84,7 @@ class HomePage extends Component {
                     />
 
                 <ShopView
-                    productList={this.state.productList}
+                    ShopProductList={this.state.shopProductList}
                     addToCart=
                     {this.state.addToCart}
                 />
