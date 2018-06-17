@@ -10,7 +10,8 @@ class ProductList extends Component {
             return <Product 
             key={i} 
             product={product}
-            deleteProduct={this.props.deleteProduct} />
+            deleteProduct={this.props.deleteProduct}
+            index={i} />
         })
 
         return (
