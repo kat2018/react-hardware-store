@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import ShopProduct from './ShopProduct';
+// import React, { Component } from 'react'
+// import ShopProduct from './ShopProduct';
 
-class ShopProductList extends Component {
+// class ShopProductList extends Component {
 
-    render() {
-        console.log("Shop Product List!!", this.props.shopProductList)
+//     render() {
+//         console.log("Shop Product List!!", this.props.shopProductList);
 
-        const shopProductComponents = this.props.shopProductList.map((shopProduct, i) => {
-            return <ShopProduct 
-            key={i} 
-            shopProduct={shopProduct}
-            addToCart={this.props.addToCart}
-            index={i} />
-        })
+//         const shopProductComponents = this.props.ShopProductList.map((product, i) => {
+//             return <ShopProduct 
+//             key={i} 
+//             product={product}
+//             addToCart={this.props.addToCart}
+//             index={i} />
+//         })
 
-        return (
-            <div>
-                {shopProductComponents}
-            </div>
-        )
-    }
-}
+//         return (
+//             <div>
+//                 {shopProductComponents}
+//             </div>
+//         )
+//     }
+// }
 
-export default ShopProductList
+// export default ShopProductList

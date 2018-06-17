@@ -1,30 +1,30 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-class ShopProduct extends Component {
+// class ShopProduct extends Component {
 
-    addToCartHandler = () => {
+//     addToCartHandler = () => {
 
-        this.props.addToCart(this.props.index)
-    }
+//         this.props.addToCartHandler(this.props.index)
+//     }
     
 
-    render() {
-        const shopProduct = this.props.shopProduct
+//     render() {
+//         const product = this.props.product
 
 
 
-        return (
-            <div>
-                <h3>Name: {shopProduct.shopProductName}</h3>
-                <h4>Price: {shopProduct.price} </h4>
-                <p>Description: {shopProduct.description}</p>
-                <div><button 
-                onClick={this.addToCartHandler}
-                >Add to Cart</button>
-                </div>
-            </div>
-        )
-    }
-}
+//         return (
+//             <div>
+//                 <h3>Name: {product.productName}</h3>
+//                 <h4>Price: {product.price} </h4>
+//                 <p>Description: {product.description}</p>
+//                 <div><button 
+//                 onClick={this.addToCartHandler}
+//                 >Add to Cart</button>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
 
-export default ShopProduct
+// export default ShopProduct
